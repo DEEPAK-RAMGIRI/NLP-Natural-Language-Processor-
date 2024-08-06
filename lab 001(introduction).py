@@ -1,5 +1,5 @@
 import nltk
-sentence = ''' today's lab is Natural Language Processing and this ia test case'''
+sentence = ''' today's lab is Natural Language Processing and this ia test case''' #Example sentence
 ans=nltk.word_tokenize(sentence)
 print(ans)
 tag=nltk.pos_tag(ans)
