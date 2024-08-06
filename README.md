@@ -1,2 +1,2 @@
 # NLP-Natural-Language-Processor-
-About Natural language programes
+About Natural language processors programes
