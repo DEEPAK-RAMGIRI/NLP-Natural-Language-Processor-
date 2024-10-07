@@ -1,5 +1,5 @@
 # NLP-Natural-Language-Processor-
-About Natural language processors programming Lab Codes
+This Repository is about Natural language processing programming Lab Codes and it's Assignments from year 3 sem 5
 
 1. LAB 01: [WORD TOKENIZE AND SENTENCE TOKENIZE.](https://github.com/DEEPAK-RAMGIRI/NLP-Natural-Language-Processor-/blob/main/LAB%20001.py)
 2. LAB 02: [AMBUGITY REMOVAL.](https://github.com/DEEPAK-RAMGIRI/AIML-LAB/blob/main/LAB_002.ipynb)
