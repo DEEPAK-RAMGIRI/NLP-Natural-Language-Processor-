@@ -145,3 +145,26 @@ sns.pairplot(data=results_df,
             hue='Score',
             palette='tab10')
 plt.show()
+
+from transformers import pipeline
+
+sent_pipeline = pipeline("sentiment-analysis",
+                         model="cardiffnlp/twitter-roberta-base-sentiment")
+
+def sentiment_analysis(inputs):
+    labels = {0: "Negative", 1: "Neutral", 2: "Positive"}
+
+    text = inputs
+    result = sent_pipeline(text)
+
+    for r in result:
+        label_num = int(r['label'].split('_')[-1])
+        print(labels[label_num], r['score'])
+
+sentiment_analysis('I love sentiment analysis!')
+
+sentiment_analysis('You_r to naive to understand this')
+
+sentiment_analysis('this is not cut for u guys i mean you guys are damn strong to understand this')
+
+sentiment_analysis('wow u failed in this  subject, i know your are very good')
